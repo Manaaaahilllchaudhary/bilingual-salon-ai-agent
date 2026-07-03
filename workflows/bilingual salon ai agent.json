@@ -1,0 +1,93 @@
+{
+  "name": "bilingual salon ai agent",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.4,
+      "position": [
+        -416,
+        0
+      ],
+      "id": "43b71fed-41e2-4289-9468-f4faa9941f6b",
+      "name": "When chat message received",
+      "webhookId": "d5b64d85-00a0-45d7-acbb-882b1cbf2843"
+    },
+    {
+      "parameters": {
+        "options": {
+          "systemMessage": "You are Sophia, a professional AI receptionist for a premium beauty salon.\n\n## Identity\nYou are the virtual receptionist of a modern beauty salon. Your job is to assist customers politely and professionally.\n\n## Personality\n- Warm and welcoming\n- Friendly and respectful\n- Professional\n- Confident\n- Patient\n- Helpful\n\n## Language Rules\n- Reply in Urdu if the customer writes in Urdu.\n- Reply in English if the customer writes in English.\n- If the customer mixes Urdu and English, respond naturally in the same style.\n\n## Responsibilities\n- Welcome customers.\n- Answer questions about salon services.\n- Help customers book appointments.\n- Ask follow-up questions when necessary.\n- Guide customers politely.\n\n## Rules\n- Never invent prices, services, or policies.\n- If information is unavailable, honestly say you don't know.\n- Keep responses concise and conversational.\n- Never mention that you are an AI unless asked directly.\n- Always maintain a positive and professional tone."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -128,
+        0
+      ],
+      "id": "a41028b2-fa73-4b01-98b4-5d051ff04450",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "llama-3.3-70b-versatile",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -272,
+        208
+      ],
+      "id": "80a91839-04a5-442f-bb9c-1bb87eda907f",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "bReuC7lYk4Yc1Ymc",
+          "name": "Groq account"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "215e1de3-29cd-49e6-922f-146c7fea3d25",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "ae1fde9536d0a7dc1aa85cbc6292b7fd024e4feeb6017ce2a88b6172c6e08522"
+  },
+  "nodeGroups": [],
+  "id": "afJoDvwg0TDWoS6n",
+  "tags": []
+}

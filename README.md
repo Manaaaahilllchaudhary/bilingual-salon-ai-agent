@@ -53,3 +53,40 @@ New features will be added incrementally following a structured software enginee
 software engineering Student
 
 Building AI Agents & Business Automation Systems.
+# AI Salon Receptionist
+
+A bilingual AI receptionist built with n8n, Docker, and Groq.
+
+## Features
+- English & Urdu conversations
+- AI Agent
+- Custom personality
+- Groq LLM integration
+
+## Tech Stack
+- n8n
+- Docker
+- Groq API
+- GitHub
+- VS Code
+
+## Project Status
+
+### Completed
+- AI Agent
+- System Prompt
+- Bilingual Support
+
+### Coming Soon
+- Memory
+- Knowledge Base
+- Google Calendar
+- WhatsApp Integration
+- Instagram DM Automation
+
+## Folder Structure
+
+workflows/
+prompts/
+docs/
+assets/
