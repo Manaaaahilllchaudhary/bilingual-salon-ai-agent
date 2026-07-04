@@ -12,9 +12,22 @@ services:
       - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - GENERIC_TIMEZONE=Asia/Karachi
+      - N8N_RESTRICT_FILE_ACCESS_TO=/home/node/project;/home/node/.n8n-files
 
     volumes:
       - n8n_data:/home/node/.n8n
+      - ./:/home/node/project
+
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    restart: unless-stopped
+
+    ports:
+      - "6379:6379"
 
 volumes:
   n8n_data:
