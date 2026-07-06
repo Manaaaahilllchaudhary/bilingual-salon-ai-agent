@@ -1,92 +1,220 @@
-#  Bilingual Salon AI Agent
+# 💇 Bilingual AI Salon Assistant
 
-> A production-ready bilingual (Urdu & English) omnichannel AI receptionist for salons and beauty studios, built with n8n, Docker, and OpenAI.
+A production-ready AI Salon Assistant built with **n8n**, **Groq LLM**, **Redis Memory**, **RAG (Retrieval-Augmented Generation)**, and **Docker**.
 
----
-
-## Project Overview
-
-The **Bilingual Salon AI Agent** is an intelligent virtual receptionist designed to automate customer interactions for salons and beauty businesses.
-
-It provides instant support, answers frequently asked questions, shares service information, assists with appointment booking, and delivers a natural conversational experience in both **Urdu** and **English**.
-
-This project is being developed as a scalable AI solution that can later be adapted for clinics, spas, gyms, restaurants, and other service-based businesses.
-
-
-
-##  Project Goals
-
-- Build a bilingual AI receptionist.
-- Support Urdu and English conversations.
-- Automate salon customer support.
-- Reduce receptionist workload.
-- Improve customer experience.
-- Create a reusable AI agent template for multiple industries.
-
-
-
-##  Project Status
-
-**Current Version:** V1 (Development Started)
-
-This project is currently under active development.
-
-New features will be added incrementally following a structured software engineering approach.
+This project is part of my AI Agent Engineering journey and is being developed following professional software engineering and Git best practices.
 
 ---
 
-##  Planned Tech Stack
+# 🚀 Features
 
-- n8n
-- Docker
-- OpenAI API
+- 🤖 AI Salon Receptionist
+- 🌐 Bilingual Support (English & Urdu)
+- 🧠 Conversational Memory (Redis)
+- 📚 Knowledge Base using RAG
+- 🔍 Semantic Search with Embeddings
+- 📄 Markdown Knowledge Base
+- 🐳 Dockerized Deployment
+- 📦 Version Controlled with Git & GitHub
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| n8n | AI Workflow Automation |
+| Groq | Large Language Model |
+| Redis | Conversation Memory |
+| Hugging Face Embeddings | Text Embeddings |
+| Simple Vector Store | Knowledge Retrieval |
+| Docker | Containerization |
+| Git & GitHub | Version Control |
+
+---
+
+# 📂 Project Structure
+
+```text
+bilingual-salon-ai-agent/
+
+├── workflows/
+│   ├── bilingual-salon-ai-agent.json
+│   └── knowledge-upload-workflow.json
+│
+├── prompts/
+│   └── system-prompt.md
+│
+├── knowledge-base/
+│   └── salon-info.md
+│
+├── docs/
+├── screenshots/
+├── demos/
+├── assets/
+│
+├── PROJECT_LOG.md
+├── docker-compose.yml
+├── README.md
+└── .gitignore
+```
+
+---
+
+# 🏗 Architecture
+
+```
+Customer
+      │
+      ▼
+Chat Trigger
+      │
+      ▼
+AI Agent
+      │
+ ┌───────────────┐
+ │ Groq Chat     │
+ │ Redis Memory  │
+ │ Vector Search │
+ └───────────────┘
+      │
+      ▼
+Knowledge Base
+      │
+      ▼
+Final Response
+```
+
+---
+
+# 📚 Current Capabilities
+
+- Answer salon-related questions
+- Use conversational memory
+- Retrieve information from a knowledge base
+- Support Urdu and English conversations
+- Refuse unrelated questions politely
+- Reduce hallucinations using RAG
+
+---
+
+# 📈 Project Progress
+
+## ✅ Phase 1 — Foundation
+
 - Git
 - GitHub
-- VS Code
+- Docker
+- Docker Compose
+- n8n
+- Groq LLM
+- Redis Memory
+- AI Personality
+- System Prompt
+
+Completed ✅
 
 ---
 
-##  Author
+## 🚧 Phase 2 — RAG
 
-**Manahil Chaudhary**
+Completed
 
-software engineering Student
+- Knowledge Upload Workflow
+- Markdown Knowledge Base
+- Hugging Face Embeddings
+- Simple Vector Store
+- Retrieval Testing
+- Prompt Guardrails
 
-Building AI Agents & Business Automation Systems.
-# AI Salon Receptionist
+In Progress
 
-A bilingual AI receptionist built with n8n, Docker, and Groq.
+- Multi-document Knowledge Base
+- Advanced Retrieval
 
-## Features
-- English & Urdu conversations
-- AI Agent
-- Custom personality
-- Groq LLM integration
+---
 
-## Tech Stack
-- n8n
-- Docker
-- Groq API
-- GitHub
-- VS Code
+## 📅 Upcoming Phases
 
-## Project Status
+### Phase 3
 
-### Completed
-- AI Agent
-- System Prompt
-- Bilingual Support
+- Qdrant Vector Database
+- PDF Knowledge
+- Website Crawling
+- Multiple Knowledge Sources
 
-### Coming Soon
-- Memory
-- Knowledge Base
+### Phase 4
+
 - Google Calendar
+- Gmail
 - WhatsApp Integration
-- Instagram DM Automation
+- Instagram Integration
+- Website Chat Widget
 
-## Folder Structure
+### Phase 5
 
-workflows/
-prompts/
-docs/
-assets/
+- PostgreSQL
+- MCP
+- Voice AI
+- Monitoring
+- Production Deployment
+
+### Phase 6
+
+- AI Agent Agency
+- Portfolio
+- Client Templates
+- SaaS Architecture
+
+---
+
+# 💻 Running the Project
+
+```bash
+docker compose up -d
+```
+
+Open:
+
+```
+http://localhost:5678
+```
+
+---
+
+# 📦 Backup Strategy
+
+Every major milestone includes:
+
+- Export latest n8n workflows
+- Save workflow JSON files
+- Commit meaningful changes
+- Push to GitHub
+
+---
+
+# 🎯 Learning Goals
+
+This project is helping me learn:
+
+- AI Agent Engineering
+- n8n Automation
+- Prompt Engineering
+- Retrieval-Augmented Generation (RAG)
+- Docker
+- Git & GitHub
+- Software Architecture
+- Professional Documentation
+- AI Deployment
+
+---
+
+# 🚀 Future Vision
+
+The long-term goal is to transform this project into a reusable production-ready AI Agent template for future clients and eventually build an AI Agent Agency.
+
+---
+
+# 📜 License
+
+This project is currently being developed for educational, portfolio, and future commercial purposes.
