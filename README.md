@@ -1,4 +1,4 @@
-# 💇 Bilingual AI Salon Assistant
+#  Bilingual AI Salon Assistant
 
 A production-ready AI Salon Assistant built with **n8n**, **Groq LLM**, **Redis Memory**, **RAG (Retrieval-Augmented Generation)**, and **Docker**.
 
@@ -6,16 +6,16 @@ This project is part of my AI Agent Engineering journey and is being developed f
 
 ---
 
-# 🚀 Features
+#  Features
 
-- 🤖 AI Salon Receptionist
-- 🌐 Bilingual Support (English & Urdu)
-- 🧠 Conversational Memory (Redis)
-- 📚 Knowledge Base using RAG
-- 🔍 Semantic Search with Embeddings
-- 📄 Markdown Knowledge Base
-- 🐳 Dockerized Deployment
-- 📦 Version Controlled with Git & GitHub
+-  AI Salon Receptionist
+-  Bilingual Support (English & Urdu)
+- Conversational Memory (Redis)
+-  Knowledge Base using RAG
+-  Semantic Search with Embeddings
+-  Markdown Knowledge Base
+-  Dockerized Deployment
+- Version Controlled with Git & GitHub
 
 ---
 
@@ -61,7 +61,7 @@ bilingual-salon-ai-agent/
 
 ---
 
-# 🏗 Architecture
+#  Architecture
 
 ```
 Customer
@@ -87,7 +87,7 @@ Final Response
 
 ---
 
-# 📚 Current Capabilities
+#  Current Capabilities
 
 - Answer salon-related questions
 - Use conversational memory
@@ -98,9 +98,9 @@ Final Response
 
 ---
 
-# 📈 Project Progress
+#  Project Progress
 
-## ✅ Phase 1 — Foundation
+## Phase 1 — Foundation
 
 - Git
 - GitHub
@@ -112,11 +112,11 @@ Final Response
 - AI Personality
 - System Prompt
 
-Completed ✅
+Completed 
 
 ---
 
-## 🚧 Phase 2 — RAG
+##  Phase 2 — RAG
 
 Completed
 
@@ -134,7 +134,7 @@ In Progress
 
 ---
 
-## 📅 Upcoming Phases
+##  Upcoming Phases
 
 ### Phase 3
 
@@ -168,7 +168,7 @@ In Progress
 
 ---
 
-# 💻 Running the Project
+#  Running the Project
 
 ```bash
 docker compose up -d
@@ -182,7 +182,7 @@ http://localhost:5678
 
 ---
 
-# 📦 Backup Strategy
+#  Backup Strategy
 
 Every major milestone includes:
 
@@ -193,7 +193,7 @@ Every major milestone includes:
 
 ---
 
-# 🎯 Learning Goals
+#  Learning Goals
 
 This project is helping me learn:
 
@@ -209,12 +209,12 @@ This project is helping me learn:
 
 ---
 
-# 🚀 Future Vision
+#  Future Vision
 
 The long-term goal is to transform this project into a reusable production-ready AI Agent template for future clients and eventually build an AI Agent Agency.
 
 ---
 
-# 📜 License
+#  License
 
 This project is currently being developed for educational, portfolio, and future commercial purposes.
